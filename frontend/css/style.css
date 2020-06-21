@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button, input, ::placeholder {
+    font-family: 'Rubik', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+button, input, a {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+    Navigator
+*/
+.navigator {
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    background: #3AB54A;
+}
+.navigator .icons_con {
+    height: 70%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.navigator .icons_con a {
+    display: block;
+    padding: 10px 13px;
+}
+.navigator .icons_con .active {
+    background: rgba(255, 255, 255, 0.3);
+}
+/*  
+    Common to pages
+*/
+.content {
+    width: calc( 100% - 50px );
+    margin-left: 50px;
+    min-height: 100vh;
+    background: #F5F5F5;
+}
+.content .header {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    background: white;
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-bottom-left-radius: 20px;
+}
+.content .grid {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+}
+.content .grid .card, .content .grid .med_card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* 
+    Beds page
+*/
+.content .options {
+    width: calc(100% - 60px);
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 35px;
+}
+.content .options button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    background: white;
+    font-weight: bold;
+    color: #aaa;
+}
+.content .options .active {
+    background: #3AB54A;
+    border-radius: 50px;
+    color: #fff;
+}
+.content .grid .card a {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    background: #3AB54A;
+}
+.content .grid .card p {
+    margin-bottom: 10px;
+}
+.content .grid .card .beds {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.content .grid .card .room, .content .grid .card .addr {
+    color: #aaa;
+}
+.content .grid .card .name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* 
+    Medicines Page
+*/
+.content .search {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 35px;
+    text-align: right;
+}
+.content .search input {
+    padding: 8px 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    position: relative;
+}
+.content .grid .med_card .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.content .grid .med_card .name2 {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.content .grid .med_card .stocks {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+.content .grid .med_card .in_stocks {
+    position: absolute;
+    right: -20px;
+    bottom: 00px;
+    background: #3AB54A;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 20px; 
+}
+
+/* 
+    Doctor Page
+*/
+.content .grid .doc_card  {
+    margin: 10px;
+}
+.doc_card .info {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.doc_card .info .img img {
+    width: 100px;
+}
+.doc_card .info .doc_content .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.doc_card .info .doc_content .ward {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.doc_card .info .doc_content .avail {
+    font-size: 12px;
+}
+.doc_card .contact {
+    margin: 6px 0;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+}
+.doc_card .contact a {
+    flex: 2;
+    font-size: 13px;
+    color: #000000;
+}
+.doc_card .contact span {
+    flex: 0.5;
+    font-size: 13px;
+}
+
+/* 
+    Dashboard
+*/
+/* .dashboard {
+    width: calc(100% - 60px);
+    margin: 20px auto;
+    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.aside_left {
+    margin-left: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+.aside_right  .welcome {
+    padding: 20px;
+    background: #94ECA0;
+    border-radius: 10px;
+}
+.aside_left .date {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+} */
+.content .right {
+    float: right;
+    width: 300px;
+    border-radius: 10px;
+    background: #fff;
+}
+.content .right .date {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+}
+.dashboard {
+    width: calc(100% - 60px);
+    margin: 20px auto;
+}
+.dashboard .left {
+    width: calc(100% - 340px);
+    margin: 20px 0;
+    margin-left: 30px;
+}
+.dashboard .left .welcome {
+    padding: 20px;
+    background: #94ECA0;
+    border-radius: 10px;
+} 
+.dashboard .grid-dash {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 32.5%);
+    justify-content: space-around;
+}
+.dashboard .patients_con {
+    padding: 10px;
+}
+.dashboard .patient {
+    padding: 8px 10px;
+    border: 1.3px solid #565454;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.left .stats {
+    padding: 20px;
+    background: #bee4c3;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left .stats .stat {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 10px;
+}

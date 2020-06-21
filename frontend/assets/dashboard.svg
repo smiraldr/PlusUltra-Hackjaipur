@@ -1,0 +1,18 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="15" height="8" fill="white"/>
+<rect width="15" height="8" fill="white"/>
+<rect width="15" height="8" fill="white"/>
+<rect x="10" y="17" width="15" height="8" fill="white"/>
+<rect x="10" y="17" width="15" height="8" fill="white"/>
+<rect x="10" y="17" width="15" height="8" fill="white"/>
+<g opacity="0.5">
+<rect x="17" y="15" width="15" height="8" transform="rotate(-90 17 15)" fill="white"/>
+<rect x="17" y="15" width="15" height="8" transform="rotate(-90 17 15)" fill="white"/>
+<rect x="17" y="15" width="15" height="8" transform="rotate(-90 17 15)" fill="white"/>
+</g>
+<g opacity="0.5">
+<rect y="25" width="15" height="8" transform="rotate(-90 0 25)" fill="white"/>
+<rect y="25" width="15" height="8" transform="rotate(-90 0 25)" fill="white"/>
+<rect y="25" width="15" height="8" transform="rotate(-90 0 25)" fill="white"/>
+</g>
+</svg>
